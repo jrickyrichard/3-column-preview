@@ -9,9 +9,9 @@
   <title>Frontend Mentor | 3-column preview card component</title>
   <link rel="stylesheet" href="output.css">
 </head>
-<body class="h-screen flex flex-col">
+<body class="h-screen max-w-[1440px] flex flex-col">
 
-  <main class="m-auto grid grid-cols-3 p-16 rounded-lg">
+  <main class="m-auto grid p-16 rounded-lg md:grid-cols-2 lg:grid-cols-3">
 
     <article class="flex flex-col justify-between bg-brightOrange w-96 p-16 leading-8 gap-12">
       <h1 class="font-bold tracking-tighter text-transparentWhite order-2 font-lexed uppercase text-4xl">Sedan</h1>
@@ -38,7 +38,7 @@
     </article>
   </main>
 
-  <footer class="text-center">
+  <footer class="p-8 text-center">
     <div class="attribution">
       Challenge by <a class="text-gray-800" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a class="text-gray-500" href="#">Your Name Here</a>.

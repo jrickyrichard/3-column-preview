@@ -557,13 +557,13 @@ video {
   width: 24rem;
 }
 
+.max-w-\[1440px\] {
+  max-width: 1440px;
+}
+
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -607,6 +607,10 @@ video {
 
 .p-16 {
   padding: 4rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -675,3 +679,15 @@ video {
     font-family: 'Lexend Deca', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap')
 }; */
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
